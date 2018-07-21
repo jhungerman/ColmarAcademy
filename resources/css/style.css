@@ -26,6 +26,7 @@ body  {
   font-size: 16px;
   font-family: Times, sans-serif;
   line-height: 1rem;
+  margin: auto;
 }
 
 /*Header Styles*/
@@ -68,31 +69,66 @@ main {
   border: 2px solid green;
 }
 
-.banner img {
-  padding: 2rem 1.5rem;
+.left-section {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
-#banner1 {
+.left-section img {
+  max-width: 100%;
+}
+
+.right-section {
+  width: 40%;
+}
+
+#banner {
   background-color: lightgray;
 }
 
-#banner1 .button {
-  padding: 0.5rem 0;
-  width: 50%;
-  color: white;
+#information {
+  align-items: flex-start;
 }
 
-.description {
+#information h2 {
+  margin: 0.5rem 0;
+}
+
+#information .left-section h1 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+#information .right-section {
+  padding-top: 1rem;
+}
+
+#information .left-section p {
+  margin-bottom: 2rem;
+}
+
+.right-section img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.info {
+  border: 2px solid purple;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  width: 100%;
-  text-align: left;
-  line-height: 1.6;
+  align-items: center;
 }
 
-.description .button {
-  background-color: gray;
+.info .description {
+  width: 100%;
+}
+
+.read-more a {
+  text-decoration: none;
+}
+
+.button {
+  width: 50%;
+  background-color: rgb(64,64,64);
+  color: white;
   text-align: center;
+  padding: 0.5rem 0;
 }
