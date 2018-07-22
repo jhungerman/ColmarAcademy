@@ -1,31 +1,39 @@
-/*Temp Styles for Box Identification*/
-
-div {
-  border: 3px dashed red;
-}
-
-header {
-  border: 3px solid maroon;
-}
-
-footer {
-  border: 3px solid firebrick;
-}
-
 /*Universal Styles*/
 
 .container {
-  border: 3px dashed blue;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid blue;
 }
 
 body  {
   font-size: 16px;
-  font-family: Times, sans-serif;
-  line-height: 1rem;
+  font-family: Georgia, sans-serif;
+  line-height: 1.4;
   margin: auto;
+  font-weight: bold;
+  color: rgba(64,64,64,1);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: rgba(64,64,64,.75);
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgba(64,64,64,.60);
+  font-weight: normal;
 }
 
 /*Header Styles*/
@@ -43,6 +51,10 @@ header {
 
 .head {
   max-height: 4rem;
+}
+
+.name span {
+  color: rgba(64,64,64,.75);
 }
 
 .logo {
@@ -69,7 +81,7 @@ header {
 
 /*Mobile Styles*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
   .container {
     flex-direction: column;
@@ -79,6 +91,7 @@ header {
 
   .class.container {
     padding: 0;
+    margin: 0;
   }
 
   .logo {
@@ -109,6 +122,7 @@ header {
 
   .right-section .button {
     width: 100%;
+    background-color: rgb(64,64,64,0.75)
   }
 
   div .right-section {
@@ -132,12 +146,12 @@ header {
   div .course-desc {
     text-align: center;
     background-color: lightgray;
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 1rem 0 1.5rem 0;
   }
 
   div .department {
-    margin: 0.5rem;
     padding: 0;
+    margin: 0.5rem 0;
   }
 
   div .info img {
@@ -163,7 +177,6 @@ header {
 main {
   position: relative;
   top: 4rem;
-  border: 2px solid green;
 }
 
 .sect-head {
@@ -173,7 +186,7 @@ main {
 
 .left-section {
   width: 60%;
-  padding: 0 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .left-section img {
@@ -184,36 +197,20 @@ main {
   width: 100%;
 }
 
+.left-section p {
+  padding-bottom: 2rem;
+}
+
 .right-section {
   width: 40%;
 }
 
+.section.container {
+  padding: 2rem 1.5rem;
+}
+
 #banner {
   background-color: lightgray;
-}
-
-#information {
-  align-items: flex-start;
-}
-
-#information .left-section {
-  padding: 1rem 1.5rem;
-}
-
-#information h2 {
-  margin: 0.5rem 0;
-}
-
-#information .left-section h1 {
-  margin: 2rem 0 1.5rem 0;
-}
-
-#information .right-section img {
-  padding-top: 1rem;
-}
-
-#information .left-section p {
-  margin-bottom: 2rem;
 }
 
 .right-section img {
@@ -221,22 +218,44 @@ main {
   padding: 0 1rem 1rem 1rem;
 }
 
+#information.section.container {
+  align-items: flex-start;
+}
+
+#info-des {
+  border-left: 1px solid lightgray;
+}
+
 #guest {
   background-color: lightgray;
 }
 
+#orientation.info {
+  border-bottom: 1px solid lightgray;
+}
+
+#campus img,
+#guest img {
+  padding-top: 1rem;
+}
+
+.class.container {
+  align-items: stretch;
+}
+
 .info {
-  border: 2px solid purple;
   display: flex;
   align-items: center;
 }
 
 .info .description {
   width: 100%;
+  line-height: 1.6;
 }
 
 .read-more a {
   text-decoration: none;
+  color: skyblue;
 }
 
 .button {
@@ -267,7 +286,7 @@ main {
 
 .course-desc {
   background-color: white;
-  height: 100%;
+  max-height: 100%;
   padding-bottom: 1.5rem;
 }
 
