@@ -62,6 +62,103 @@ header {
   margin-right: 0.5rem;
 }
 
+.mobile-nav {
+  display: none;
+  width: 100%;
+}
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .class.container {
+    padding: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .name span {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div .left-section {
+    align-self: center;
+    width: 100%;
+  }
+
+  .right-section {
+    align-self: center;
+  }
+
+  .right-section .button {
+    width: 100%;
+  }
+
+  div .right-section {
+    width: 100%;
+  }
+
+  #information .left-section {
+    display: none;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .department img,
+  .department h3,
+  .department p {
+    display: none;
+  }
+
+  div .course-desc {
+    text-align: center;
+    background-color: lightgray;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+
+  div .department {
+    margin: 0.5rem;
+    padding: 0;
+  }
+
+  div .info img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis.container img,
+  .thesis.container .description,
+  .thesis.container p,
+  .thesis.container h2 {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+}
+
 /*Main Styles*/
 main {
   position: relative;
@@ -187,7 +284,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 5rem;
+  height: auto;
   padding: 1rem 1.5rem;
 }
 
