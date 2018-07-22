@@ -124,6 +124,10 @@ main {
   padding: 0 1rem 1rem 1rem;
 }
 
+#guest {
+  background-color: lightgray;
+}
+
 .info {
   border: 2px solid purple;
   display: flex;
@@ -172,4 +176,21 @@ main {
 
 .thesis .right-section {
   align-self: flex-start;
+}
+
+#fisma {
+  background-color: lightgray;
+}
+
+/*Footer Styles*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 5rem;
+  padding: 1rem 1.5rem;
+}
+
+.foot-nav ul li {
+  display: inline-block;
 }
