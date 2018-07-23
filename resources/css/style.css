@@ -1,16 +1,82 @@
+/*fonts*/
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /*Universal Styles*/
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
 }
 
 body  {
   font-size: 16px;
-  font-family: Georgia, sans-serif;
-  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
   margin: auto;
   font-weight: bold;
   color: rgba(64,64,64,1);
@@ -22,6 +88,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -32,8 +99,31 @@ h3 {
 
 p {
   font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
   color: rgba(64,64,64,.60);
   font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(64,64,64)
+}
+
+/*Universal Mobile Styles*/
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  html {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
 /*Header Styles*/
@@ -79,15 +169,9 @@ header {
   width: 100%;
 }
 
-/*Mobile Styles*/
+/* Header Mobile Styles*/
 
 @media only screen and (max-width: 768px) {
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
   .class.container {
     padding: 0;
@@ -109,67 +193,6 @@ header {
   .mobile-nav {
     display: flex;
     justify-content: space-around;
-  }
-
-  div .left-section {
-    align-self: center;
-    width: 100%;
-  }
-
-  .right-section {
-    align-self: center;
-  }
-
-  .right-section .button {
-    width: 100%;
-    background-color: rgb(64,64,64,0.75)
-  }
-
-  div .right-section {
-    width: 100%;
-  }
-
-  #information .left-section {
-    display: none;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .department img,
-  .department h3,
-  .department p {
-    display: none;
-  }
-
-  div .course-desc {
-    text-align: center;
-    background-color: lightgray;
-    padding: 1rem 0 1.5rem 0;
-  }
-
-  div .department {
-    padding: 0;
-    margin: 0.5rem 0;
-  }
-
-  div .info img {
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .thesis.container img,
-  .thesis.container .description,
-  .thesis.container p,
-  .thesis.container h2 {
-    display: none;
-  }
-
-  .footer {
-    margin-top: 0.5rem;
-    padding: 0;
   }
 }
 
@@ -277,7 +300,6 @@ main {
 .department {
   width: 100%;
   margin: 1rem;
-  border: 2px solid green;
 }
 
 .department img {
@@ -298,6 +320,106 @@ main {
   background-color: lightgray;
 }
 
+/*Main Mobile Styles*/
+
+@media only screen and (max-width: 768px) {
+  div .left-section {
+    align-self: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .right-section {
+    align-self: center;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+  #banner h2 {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .right-section .button {
+    width: 100%;
+    background-color: rgb(64,64,64,0.75)
+  }
+
+  #information {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  #information .left-section {
+    display: none;
+  }
+
+  #information h2,
+  #information h3,
+  #information a {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  #learn {
+    padding: 2rem 1rem;
+    border: 1px solid lightgray;
+  }
+
+  .sect-head {
+    padding: 0 0 1rem 0;
+  }
+
+  #thesis {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  #thesis .sect-head {
+    padding: 1rem 0;
+  }
+
+  #thesis .right-section {
+    display: none;
+    padding: 0;
+  }
+
+  .department img,
+  .department h3,
+  .department p {
+    display: none;
+  }
+
+  div .course-desc {
+    text-align: center;
+    background-color: lightgray;
+    padding: 1rem 0 1.5rem 1rem;
+    text-align: left;
+  }
+
+  div .department {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  div .info img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #information .info {
+    padding: 2rem 0;
+  }
+
+  .thesis.container img,
+  .thesis.container .description,
+  .thesis.container p,
+  .thesis.container h2 {
+    display: none;
+  }
+}
+
 /*Footer Styles*/
 .footer {
   display: flex;
@@ -309,4 +431,12 @@ main {
 
 .foot-nav ul li {
   display: inline-block;
+}
+
+/*Footer Movile Styles*/
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
 }
