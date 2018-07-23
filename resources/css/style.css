@@ -137,6 +137,7 @@ header {
   position: fixed;
   z-index: 1;
   background-color: white;
+  border-bottom: 1px solid lightgray;
 }
 
 .head {
@@ -162,6 +163,15 @@ header {
   display: inline-block;
   padding: 0 1rem;
   margin-right: 0.5rem;
+}
+
+.navigation ul li:hover {
+  background-color: rgb(64,64,64);
+}
+
+.navigation ul li:hover a {
+  color: white;
+  font-weight: bold;
 }
 
 .mobile-nav {
@@ -234,6 +244,20 @@ main {
 
 #banner {
   background-color: lightgray;
+}
+
+#banner h2 {
+  padding: 2rem 0;
+}
+
+#banner a {
+  color: white;
+}
+
+#banner .button:hover {
+  background-color: white;
+  border: 2px solid rgb(64,64,64);
+  color: rgb(64,64,64);
 }
 
 .right-section img {
@@ -336,7 +360,7 @@ main {
   }
 
   #banner h2 {
-    padding: 2rem 0 1.5rem 0;
+    padding: 4rem 0 1.5rem 0;
   }
 
   .right-section .button {
@@ -433,10 +457,25 @@ main {
   display: inline-block;
 }
 
+.foot-nav ul li:hover {
+  background-color: rgb(64,64,64);
+}
+
+.foot-nav ul li:hover a {
+  color: white;
+  font-weight: bold;
+}
+
 /*Footer Movile Styles*/
 
 @media only screen and (max-width: 768px) {
   .footer {
     padding: 1rem 0;
+    text-align: center;
+  }
+
+  .footer span,
+  .footer ul {
+    display: none;
   }
 }
